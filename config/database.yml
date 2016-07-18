@@ -1,0 +1,5 @@
+development:
+  adapter: postgresql
+  database: fourteener
+production:
+    url: <%= ENV['DATABASE_URL'] %>
