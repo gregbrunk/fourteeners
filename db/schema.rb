@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160718215654) do
+ActiveRecord::Schema.define(version: 20160718224154) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -19,12 +19,12 @@ ActiveRecord::Schema.define(version: 20160718215654) do
   create_table "mountains", force: :cascade do |t|
     t.string   "name"
     t.string   "range"
-    t.string   "elevation"
-    t.string   "rank"
+    t.integer  "elevation"
+    t.integer  "rank"
     t.string   "location"
     t.string   "description"
     t.string   "hero_url"
-    t.string   "challenge"
+    t.integer  "challenge"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
