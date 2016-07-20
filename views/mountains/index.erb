@@ -28,7 +28,10 @@
         <div class="col-md-2" id="elevation-view">
           <p id="label">Elevation</p>
           <p id="elevation-data"><%=mountain.elevation%> ft.</p>
-          <button type="button" class="btn btn-default btn-lg" id="view-button">View</button>
+          
+          <form method="get" action="/mountains/<%=mountain.id%>">
+            <input type="submit" class="btn btn-default btn-lg" id="view-button" value="view"></button>
+          </form>
         </div>
       </div>
     </div>
