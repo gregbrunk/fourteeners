@@ -3,11 +3,7 @@ class Fourteener < Sinatra::Base
 	# General route actions
 	get '/' do
 		@mountains = Mountain.all
-		erb(:"mountains/index")
-	end
-
-	get '/mountains' do
-		erb :home
+		erb :index
 	end
 
 	get '/about' do
@@ -16,11 +12,13 @@ class Fourteener < Sinatra::Base
 
 	#Mountain Routes - Getting
 	get '/mountains' do
-		@mountains = Mountain.all.to_json
+		@mountains = Mountain.all
+		erb :index
 	end
 
 	get '/mountains/:id' do
-		@mountain = Mountain.find(params[:id]).to_json
+		@mountain = Mountain.find(params[:id])
+		erb :show
 	end
 
 	#Mountain Routes - Posting/Updating
@@ -43,6 +41,5 @@ class Fourteener < Sinatra::Base
 	    @del_mountain = Mountain.find(params[:id])
 	    @del_mountain.destroy
   	end
-
 end
 

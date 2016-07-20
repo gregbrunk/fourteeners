@@ -1,0 +1,46 @@
+<section class="mountain-hero">
+	<div class="col-md-12" id="mountain-buttons">
+		<button type="button" class="btn btn-default" id="edit">Edit Mountain</button>
+		<button type="button" class="btn btn-default" id="delete">Delete Mountain</button>
+	</div>
+	<div class= "col-md-12" id="mountain-healine-block">
+		<p id="mountain-headline"><%=@mountain.name%></p>
+	</div>
+</section>
+
+<section class="main-content" id="index-main-content">
+	<div class="row" id="mountain-list-header">
+		<p>Details</p>
+	</div>
+	<div class="row">
+		<div class="col-md-6 col-md-offset-3">
+			<hr id="break-line">
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-md-offset-2" id="left-side">
+			<div class="col-md-6" id="rating-box">
+		 		<p><span id="rating-label">Height Rank: </span><span id="rating-value"><%=@mountain.rank%></span></p>
+		 	</div>
+			<p id="label">Sub-Range</p>
+		 	<p id="mountain-data-large">Sawatch Range</p>
+		 	<p id="label"><%=@mountain.range%></p>
+			<p id="mountain-data-large">Rocky Mountains</p>
+		</div>
+		<div class="col-md-4 col" id="right-side">
+			<div class="col-md-6" id="challenge-box">
+		 		<p><span id="rating-label">Challenge Score: </span><span id="rating-value"><%=@mountain.challenge%></span></p>
+		 	</div>
+			<p id="label">Elevation</p>
+		 	<p id="mountain-data-large"><%=@mountain.elevation%> ft.</p>
+		 	<p id="label">Location</p>
+			<p id="mountain-data-large"><%=@mountain.latitude%> - <%=@mountain.longitude%></p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8 col-md-offset-2" id="description-block">
+			<p id="label">Description</p>
+		 	<p id="description-data"><%=@mountain.description%></p>
+		</div>
+	</div>
+</section>

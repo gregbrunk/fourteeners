@@ -1,3 +1,19 @@
+/*Fonts*/
+@font-face {
+	font-family: Sequi_bold;
+	font-weight: bold;
+	src: url("../fonts/Sequi_bold.otf") format("opentype");
+}
+@font-face {
+	font-family: Sequi_regular;
+	font-weight: regular;
+	src: url("../fonts/Sequi_regular.otf") format("opentype");
+}
+@font-face {
+	font-family: Sequi_light;
+	font-weight: light;
+	src: url("../fonts/Sequi_light.otf") format("opentype");
+}
 body {
 	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
 	font-weight: 200;
@@ -92,12 +108,15 @@ html {
 	padding:0;
 	position: relative;
 	width: 100%;
+	border-top: 2px solid #E972B6;
 }
 
 #mountain-list-header {
+	font-family: Sequi_light;
 	text-align: center;
 	color: #5D6683;
-	margin: 20px 0 0 0;
+	margin: 30px 0 0 0;
+	font-size: 50px;
 }
 
 #mountain-box {
@@ -159,7 +178,6 @@ html {
     text-align: center;
 }
 
-
 #challenge-score-label {
 	font-size: 20px;
 	color: #E972B6;
@@ -196,6 +214,136 @@ html {
 #view-button:hover {
 	background-color: #5D6683;
 	color: white;
+}
+
+/*Mountian Page Styles*/
+
+.mountain-hero {
+	background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Mount_Massive_from_road_by_Twin_Lakes.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	backface-visibility: hidden;
+	height: 65vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+#mountain-healine-block {
+	text-align: center;
+	display: block;
+	position: absolute;
+	height: 85px;
+    bottom: 0;
+    left: 0;
+    background: rgba(93, 102, 131, .6);
+    vertical-align: middle;
+}
+
+#mountain-headline {
+	color: white;
+    font-size: 55px;
+    font-family: Sequi_bold;
+    padding-top: 10px;
+}
+
+#break-line {
+	border: 1px solid #E972B6;
+	margin: 0 0 50px 0;
+}
+
+#left-side {
+	text-align: left;
+}
+
+#right-side {
+	text-align: right;
+}
+
+#mountain-data-large {
+	margin:0 0 15px 0;
+    font-size: 2.5vw;
+	color: #5D6683;
+}
+
+#rating-box {
+	margin: 0 0 25px 0;
+	height: 60px;
+	width: 100%;
+	background-color: #5D6683;
+	text-align: center;
+}
+
+#challenge-box {
+	margin: 0 0 25px 0;
+	height: 60px;
+	width: 100%;
+	background-color: #E972B6;
+	text-align: center;
+}
+
+#rating-label {
+	color: white;
+    font-family: helvetica;
+	font-weight: 200;
+	font-size: 30px;
+	line-height: 60px;
+}
+
+#rating-value {
+	color: white;
+    font-family: helvetica;
+	font-weight: 600;
+	font-size: 30px;
+	line-height: 60px;
+}
+
+#description-block {
+	margin-top: 25px;
+	margin-bottom: 25px;
+}
+
+#description-data {
+	font-size: 1.5vw;
+	color: #5D6683;
+	text-align: justify;
+    text-justify: inter-word;
+}
+
+#mountain-buttons {
+	text-align: left;
+	position: absolute;
+    bottom: 0;
+	margin-top: 75px;
+	z-index: 1;
+	margin-bottom: 25px
+}
+
+#edit{
+	border: 1px solid white;
+	border-radius: 15px;
+	color: white;
+	background-color: transparent;
+	width: 130px;
+
+}
+
+#edit:hover{
+	background-color: #E972B6;
+
+}
+
+#delete{
+	border: 1px solid white;
+	border-radius: 15px;
+	color: white;
+	background-color: transparent;
+	width: 130px;
+}
+
+#delete:hover{
+	background-color: #B70000;
 }
 
 /*Buttons No Outline*/
