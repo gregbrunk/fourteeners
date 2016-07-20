@@ -2,6 +2,11 @@ class Fourteener < Sinatra::Base
 	require 'json'
 	# General route actions
 	get '/' do
+		@mountains = Mountain.all
+		erb(:"mountains/index")
+	end
+
+	get '/mountains' do
 		erb :home
 	end
 
@@ -19,11 +24,11 @@ class Fourteener < Sinatra::Base
 	end
 
 	#Mountain Routes - Posting/Updating
-	post '/mountains' do
+	post '/mountains/new' do
 	    request.body.rewind
-	    new_mountain = JSON.parse(request.body.read)
-	    @mountain = Mountain.new(new_mountain)
-	    @mountain.save
+	    new_mountain = URI::decode_www_form(request.body.read).to_h
+	    @mountain = Mountain.create new_mountain
+	    redirect to ('/mountains')
  	end
 
  	put '/mountains/:id' do

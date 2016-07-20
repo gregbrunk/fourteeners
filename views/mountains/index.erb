@@ -1,1 +1,36 @@
-<h2>Mountains</h2>
+<section class="hero"></section>
+<section class="main-content">
+  <div class="row" id="mountain-list-header">
+    <h1>Mountain List</h1>
+  </div>
+  <% @mountains.each do |mountain| %>
+    <div class="container col-md-10 col-md-offset-1" id="mountain-list">
+      <div class ="col-md-12" id="mountain-box">
+        <!-- Picture Section -->
+        <div class="col-md-2" id="list-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Mount_Massive_from_road_by_Twin_Lakes.jpg')">
+        </div>
+        <div class="col-md-2" id="rank">
+          <p id="label">Height Rank</p>
+          <div>
+            <p><%=mountain.rank%></p>
+          </div>
+        </div>
+        <div class="col-md-3" id="range">
+          <p id="label">Name</p>
+          <p id="mountain-data"><%=mountain.name%></p>
+          <p id="label">Range</p>
+          <p id="mountain-data"><%=mountain.range%></p>
+        </div>
+        <div class="col-md-3" id="challenge-block" style="background-image: url('images/mountain-graphic.png')">
+          <p id="challenge-score-label">Challenge Score</p>
+          <p id="challenge-score-value"><%=mountain.challenge%></p>
+        </div>
+        <div class="col-md-2" id="elevation-view">
+          <p id="label">Elevation</p>
+          <p id="elevation-data"><%=mountain.elevation%> ft.</p>
+          <button type="button" class="btn btn-default btn-lg" id="view-button">View</button>
+        </div>
+      </div>
+    </div>
+    <% end %>
+</section>

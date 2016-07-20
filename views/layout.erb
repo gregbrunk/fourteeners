@@ -1,19 +1,121 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Welcome to fourteener</title>
-  <link rel="stylesheet" type="text/css" href="/css/style.css">
+<title>fourteener</title>
+<!-- Styles -->
+  <!-- Set Viewport -->
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <!-- Bootstrap CSS CDN -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <!-- Local Styles -->
+  <link rel="stylesheet" type="text/css" href="css/style.css"/>
 </head>
 <body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="/about">About</a></li>
-      </ul>
+
+  <!-- Navigation Bar -->
+  <div class="container-fluid">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="navbar-header">
+        <!--Burger navbar -->
+        <button type="button" class="navbar-toggle">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">fourteener</a>
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav navbar-left">
+          <li><a href="#jumpPoint" role="button">Mountains</a></li>
+          <li><a href="#myModal" role="button" data-toggle="modal">New Mountain</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li>
+            <form class="navbar-form" role="search">
+              <div class="input-group">
+                <input type="text" class="form-control" value="Search" name="srch-term" id="srch-term">
+                <div class="input-group-btn">
+                  <button id="search-button" class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+                </div>
+              </div>
+            </form>
+          </li>
+          <li><a class="btn btn-social-icon btn-github btn-lg" id="github"><span class="fa fa-github"></span></a></li>
+        </ul>
+      </div>
     </nav>
-  </header>
-  <footer>
-  </footer>
+  </div>
+
+  <!-- New Mountian Modal -->
+  <!-- Modal Setup -->
+  <div id="myModal" class="modal fade" role="dialog">
+    <div class="modal-dialog modal-lg">
+      <!-- Modal Content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <h3 class="modal-title">Add a New Mountain</h3>
+        </div>
+        <div class="modal-body">
+          <!-- Add Mountain Form -->
+          <form id="new-mountain-form" role="form" name="new_mountain">
+            <div class="form-group">
+              <label for="name">Mountain Name:</label>
+              <input name="name" type="text" class="form-control" id="mountain-name" placeholder="e.g 'Mt. Massive'">
+            </div>
+            <div class="form-group">
+              <label for="range">Range Name:</label>
+              <input name="range" type="text" class="form-control" id="range-name" placeholder="e.g 'Front Range'">
+            </div>
+            <div class="form-group">
+              <label for="elevation">Elevation(ft):</label>
+              <input name="elevation" type="text" class="form-control" id="elevation" placeholder="e.g '14,245'">
+            </div>
+            <div class="form-group">
+              <label for="rank">Height Rank:</label>
+              <input name="rank" type="number" class="form-control" id="height-rank" placeholder="Amongst 14'ers in Colorado">
+            </div>
+            <div class="form-group">
+              <label for="description">Description:</label>
+              <textarea name="description" class="form-control" rows="4" id="mountain-description" placeholder="Tell us about the mountain"></textarea>
+            </div>
+            <div class="form-group">
+              <label for="hero_url">Image Link:</label>
+              <input name="hero_url" type="text" class="form-control" id="mountain-image" placeholder="Link to image of mountain">
+            </div>
+            <div class="form-group">
+              <label for="challenge">Challenge Score:</label>
+              <input name="challenge" type="number" class="form-control" id="challenge-score" placeholder="1.0 - 10.0">
+            </div>
+            <div class="form-group">
+              <label for="longitude">Longitude:</label>
+              <input name="longitude" type="text" class="form-control" id="longitude" placeholder="e.g. '39.19 N'">
+            </div>
+            <div class="form-group">
+              <label for="latitude">Latitude:</label>
+              <input name="latitude" type="text" class="form-control" id="latitude" placeholder="e.g. '106.47 W'">
+            </div>
+          </form>
+        </div>
+        <!-- Modal Submit/Cancel -->
+        <div class="modal-footer">
+          <button class="btn btn-success" id="submit" data-dismiss="modal" action="/mountains">Submit</button>
+          <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div name="jumpPoint"></div>
+  
+  <!-- ERB Yield -->
+  <%= yield %>
+
+<!-- Scripts -->
+  <!-- jQuery CDN -->
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+  <!-- Bootstrap JS CDN--> 
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <!-- Local Scripts -->
+  <script type="text/javascript" src="scripts/script.js"></script>
 </body>
 </html>

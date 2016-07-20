@@ -1,0 +1,204 @@
+body {
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+	font-weight: 200;
+}
+html {
+	margin:0;
+	padding:0;
+}
+
+/*Nav Items*/
+.navbar-default {
+	background-color: transparent;
+}
+
+.navbar {
+	margin-bottom: 0;
+	z-index: 3;
+	border-bottom: 1px white solid;
+	font-size: 14px !important;
+	line-height: 2 !important;
+	letter-spacing: 4px;
+	border-radius: 0;
+	height: 60px;
+	padding-top: 5px;
+}
+
+.navbar-brand {
+	font-size: 20px;
+	font-weight: bold;
+	position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    text-align: center;
+    margin: auto;
+   	color: #fff !important;
+   	padding-top: 20px;
+}
+
+.navbar li a {
+	color: #fff !important;
+	outline: none
+}
+
+.navbar-nav li a:hover {
+	color: #E972B6 !important;
+}
+
+.input-group {
+	border: 1px white solid;
+	border-radius: 15px;
+	color: white;
+}
+
+#srch-term {
+	background-color: transparent;
+	color: white;
+	border:0;
+}
+
+.glyphicon-search {
+	color: white;
+	outline: none;
+}
+
+#search-button {
+	border: 0;
+	background-color: transparent;
+	outline: none;
+}
+
+#github {
+	margin-right: 20px;
+}
+
+/*Hero Section*/
+.hero {
+	background-image: url('../images/fourteeners.jpg');
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+	background-size: cover;
+  	backface-visibility: hidden;
+	height: 100vh;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+/*Content Sections*/
+.main-content {
+	height: auto;
+	padding:0;
+	position: relative;
+	width: 100%;
+}
+
+#mountain-list-header {
+	text-align: center;
+	color: #5D6683;
+	margin: 20px 0 0 0;
+}
+
+#mountain-box {
+	display: block;
+	height: 200px;
+	border: 1px #E972B6 solid;
+	margin: 20px 0px;
+	padding: 0;
+
+}
+
+#list-image {
+    background-size: cover;
+    background-position: center center;
+    height: 100%;
+}
+
+#label {
+	font-size: 14px;
+	color: #E972B6;
+	margin:0;
+}
+
+#mountain-data {
+	margin:0 0 15px 0;
+    font-size: 20px;
+    font-size: 1.8vw;
+	color: #5D6683;
+}
+
+#rank {
+	height: 100%;
+	padding-top: 30px;
+	text-align: center;
+}
+
+#rank div {
+	height: 100px;
+	width: 100px;
+	border-radius: 100px;
+	background-color: #5D6683;
+	color: white;
+	display: inline-block;
+	line-height: 100px;
+	margin: 10px 0 0 0;
+	font-size: 45px
+}
+
+#range {
+	text-align: left;
+	padding-top: 30px;
+}
+
+#challenge-block {
+    position: relative;
+    height: 100%;
+    background-position: center center;
+    background-size: cover;
+    text-align: center;
+}
+
+
+#challenge-score-label {
+	font-size: 20px;
+	color: #E972B6;
+	margin-top: 20px;
+}
+
+#challenge-score-value {
+	font-size: 35px;
+	color: white;
+	margin-top: 75px;
+}
+
+#elevation-view {
+	text-align: center;
+	padding-top: 30px;
+	border-left: 1px #E972B6 solid;
+	height: 100%;
+}
+
+#elevation-data {
+    font-size: 25px;
+    font-size: 2.2vw;
+	color: #5D6683;
+}
+
+#view-button {
+	background-color: #E972B6;
+	border:0;
+	color: white;
+	width: 100px;
+	margin-top: 10px;
+}
+
+#view-button:hover {
+	background-color: #5D6683;
+	color: white;
+}
+
+/*Buttons No Outline*/
+.btn, .btn.active.focus, .btn.active:focus, .btn.focus, .btn:active.focus, .btn:active:focus, .btn:focus {
+    outline: 0;
+}
