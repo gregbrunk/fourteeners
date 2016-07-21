@@ -102,20 +102,33 @@ html {
 	width: 100%;
 }
 
-/*Content Sections*/
+#hero-healine-block {
+	display: block;
+	position: absolute;
+	height: 100%;
+}
+
+#hero-headline {
+	text-align: center;
+	margin-top: 175px;
+	color: white;
+    font-size: 80px;
+    font-family: Sequi_regular;
+}
+
+/*Index Content Sections*/
 .main-content {
 	height: auto;
 	padding:0;
 	position: relative;
 	width: 100%;
-	border-top: 2px solid #E972B6;
 }
 
 #mountain-list-header {
 	font-family: Sequi_light;
 	text-align: center;
 	color: #5D6683;
-	margin: 30px 0 0 0;
+	margin: 40px 0 0 0;
 	font-size: 50px;
 }
 
@@ -142,7 +155,6 @@ html {
 
 #mountain-data {
 	margin:0 0 15px 0;
-    font-size: 20px;
     font-size: 1.8vw;
 	color: #5D6683;
 }
@@ -198,7 +210,6 @@ html {
 }
 
 #elevation-data {
-    font-size: 25px;
     font-size: 2.2vw;
 	color: #5D6683;
 }
@@ -230,22 +241,24 @@ html {
 	width: 100%;
 }
 
+#mountain-main-content{
+	border-top: 2px solid #E972B6;
+}
+
 #mountain-healine-block {
 	text-align: center;
 	display: block;
 	position: absolute;
-	height: 85px;
-    bottom: 0;
+	height: 100%;
     left: 0;
-    background: rgba(93, 102, 131, .6);
-    vertical-align: middle;
+	background: rgba(93, 102, 131, .5);
 }
 
 #mountain-headline {
+	margin-top: 110px;
 	color: white;
     font-size: 55px;
     font-family: Sequi_bold;
-    padding-top: 10px;
 }
 
 #break-line {

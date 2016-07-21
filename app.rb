@@ -1,9 +1,15 @@
 class Fourteener < Sinatra::Base
 	set :method_override, true
 	require 'json'
+	
 	# General route actions
 	get '/' do
-		@mountains = Mountain.all
+		@mountains = Mountain.all.order(:rank)
+		erb :index
+	end
+
+	get '/mountains' do
+		@mountains = Mountain.all.order(:rank)
 		erb :index
 	end
 
@@ -11,11 +17,7 @@ class Fourteener < Sinatra::Base
 		erb :about
 	end
 
-	#Mountain Routes - Getting
-	get '/mountains' do
-		@mountains = Mountain.all
-		erb :index
-	end
+	#Mountain Routes - Get One
 
 	get '/mountains/:id' do
 		@mountain = Mountain.find(params[:id])
@@ -27,7 +29,6 @@ class Fourteener < Sinatra::Base
 	    request.body.rewind
 	    new_mountain = URI::decode_www_form(request.body.read).to_h
 	    @mountain = Mountain.create new_mountain
-	    redirect to ('/mountains')
  	end
 
  	put '/mountains/:id' do

@@ -9,35 +9,35 @@
           <h3 class="modal-title">Edit Mountain</h3>
         </div>
         <div class="modal-body">
-          <!-- Add Mountain Form -->
+          <!-- Edit Mountain Form -->
           <form id="edit-mountain-form" role="form" name="new_mountain">
             <div class="form-group">
               <label for="elevation">Elevation(ft):</label>
-              <input name="elevation" type="text" class="form-control" id="elevation" placeholder="e.g '14,245'">
+              <input name="elevation" type="text" class="form-control" id="elevation" value="<%=@mountain.elevation%>">
             </div>
             <div class="form-group">
               <label for="rank">Height Rank:</label>
-              <input name="rank" type="number" class="form-control" id="height-rank" placeholder="Amongst 14'ers in Colorado">
+              <input name="rank" type="number" class="form-control" id="height-rank" value="<%=@mountain.rank%>">
             </div>
             <div class="form-group">
               <label for="description">Description:</label>
-              <textarea name="description" class="form-control" rows="4" id="mountain-description" placeholder="Tell us about the mountain"></textarea>
+              <textarea name="description" class="form-control" rows="4" id="mountain-description"><%=@mountain.description%></textarea>
             </div>
             <div class="form-group">
               <label for="hero_url">Image Link:</label>
-              <input name="hero_url" type="text" class="form-control" id="mountain-image" placeholder="Link to image of mountain">
+              <input name="hero_url" type="text" class="form-control" id="mountain-image" value="<%=@mountain.hero_url%>">
             </div>
             <div class="form-group">
               <label for="challenge">Challenge Score:</label>
-              <input name="challenge" type="number" class="form-control" id="challenge-score" placeholder="1.0 - 10.0">
+              <input name="challenge" type="number" class="form-control" id="challenge-score" value="<%=@mountain.challenge%>">
             </div>
             <div class="form-group">
               <label for="longitude">Longitude:</label>
-              <input name="longitude" type="text" class="form-control" id="longitude" placeholder="e.g. '39.19 N'">
+              <input name="longitude" type="text" class="form-control" id="longitude" value="<%=@mountain.longitude%>">
             </div>
             <div class="form-group">
               <label for="latitude">Latitude:</label>
-              <input name="latitude" type="text" class="form-control" id="latitude" placeholder="e.g. '106.47 W'">
+              <input name="latitude" type="text" class="form-control" id="latitude" value="<%=@mountain.latitude%>">
             </div>
           </form>
         </div>
@@ -50,6 +50,8 @@
     </div>
   </div>
 
+<!-- Main Page Content -->
+<!-- Hero Section -->
 <section class="mountain-hero">
 	<div class="col-md-12" id="mountain-buttons">
 		<button data-target="#myEditModal" data-toggle="modal" class="btn btn-default" id="edit">Edit Mountain</button>
@@ -60,7 +62,8 @@
 	</div>
 </section>
 
-<section class="main-content" id="index-main-content">
+<!-- Main Content Section (detials) -->
+<section class="main-content" id="mountain-main-content">
 	<div class="row" id="mountain-list-header">
 		<p>Details</p>
 	</div>
