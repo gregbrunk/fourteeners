@@ -300,13 +300,13 @@ html, body {
 	}
 
 	#rank div {
-		height: 100px;
-		width: 100px;
+		height: 75px;
+		width: 75px;
 		border-radius: 75px;
 		background-color: #5D6683;
 		color: white;
 		display: inline-block;
-		line-height: 100px;
+		line-height: 75px;
 		margin: 10px 0 0 0;
 	    font-size: 5vw;
 	}
