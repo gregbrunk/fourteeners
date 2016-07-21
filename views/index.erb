@@ -7,39 +7,40 @@
 
 <!-- Main Content (Mountain List) -->
 <section class="main-content">
-  <div class="row" id="mountain-list-header">
+    <div class="row" id="mountain-list-header">
     <p>Mountain List</p>
-  </div>
-  <% @mountains.each do |mountain| %>
-    <div class="container col-md-10 col-md-offset-1" id="mountain-list">
-      <div class ="col-md-12" id="mountain-box">
-        <!-- Picture Section -->
-        <div class="col-md-2" id="list-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Mount_Massive_from_road_by_Twin_Lakes.jpg')">
+    </div>
+    
+    <% @mountains.each do |mountain| %> 
+    <div class="container col-md-10 col-md-offset-1 mountain-list">
+        <div class ="col-md-12 mountain-box">
+            <!-- Picture Section -->
+            <div class="col-md-2" id="list-image" style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Mount_Massive_from_road_by_Twin_Lakes.jpg')">
+            </div>
+            <div class="col-md-2 col-xs-6" id="rank">
+                <p id="label">Height Rank</p>
+                <div>
+                    <p><%=mountain.rank%></p>
+                </div>
+            </div>
+            <div class="col-md-3 col-xs-6" id="range">
+                <p id="label">Name</p>
+                <p id="mountain-data"><%=mountain.name%></p>
+                <p id="label">Range</p>
+                <p id="mountain-data"><%=mountain.range%></p>
+            </div>
+            <div class="col-md-3 col-xs-6" id="challenge-block">
+                <p id="challenge-score-label">Challenge Score</p>
+                <p id="challenge-score-value"><%=mountain.challenge%></p>
+            </div>
+            <div class="col-md-2 col-xs-6" id="elevation-view">
+                <p id="label">Elevation</p>
+                <p id="elevation-data"><%=mountain.elevation%> ft.</p>
+                <form method="get" action="/mountains/<%=mountain.id%>">
+                    <input type="submit" class="btn btn-default btn-lg" id="view-button" value="view"></button>
+                </form>
+            </div>
         </div>
-        <div class="col-md-2" id="rank">
-          <p id="label">Height Rank</p>
-          <div>
-            <p><%=mountain.rank%></p>
-          </div>
-        </div>
-        <div class="col-md-3" id="range">
-          <p id="label">Name</p>
-          <p id="mountain-data"><%=mountain.name%></p>
-          <p id="label">Range</p>
-          <p id="mountain-data"><%=mountain.range%></p>
-        </div>
-        <div class="col-md-3" id="challenge-block" style="background-image: url('images/mountain-graphic.png')">
-          <p id="challenge-score-label">Challenge Score</p>
-          <p id="challenge-score-value"><%=mountain.challenge%></p>
-        </div>
-        <div class="col-md-2" id="elevation-view">
-          <p id="label">Elevation</p>
-          <p id="elevation-data"><%=mountain.elevation%> ft.</p>
-          <form method="get" action="/mountains/<%=mountain.id%>">
-            <input type="submit" class="btn btn-default btn-lg" id="view-button" value="view"></button>
-          </form>
-        </div>
-      </div>
     </div>
     <% end %>
 </section>
