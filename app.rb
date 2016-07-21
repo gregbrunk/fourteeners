@@ -1,4 +1,5 @@
 class Fourteener < Sinatra::Base
+	set :method_override, true
 	require 'json'
 	# General route actions
 	get '/' do
@@ -30,14 +31,15 @@ class Fourteener < Sinatra::Base
  	end
 
  	put '/mountains/:id' do
- 		request.body.rewind
-	    updates = JSON.parse(request.body.read)
+	    request.body.rewind
+	    updates = URI::decode_www_form(request.body.read).to_h
 	    @mountain = Mountain.find(params[:id])
 	    @mountain.update_attributes(updates)
   	end
 
  	#Mountain Routes - Deleteing
  	delete '/mountains/:id' do
+ 		p params[:id]
 	    @del_mountain = Mountain.find(params[:id])
 	    @del_mountain.destroy
   	end
