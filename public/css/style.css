@@ -357,7 +357,7 @@ html, body {
 
 .mountain-hero {
 	background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/49/Mount_Massive_from_road_by_Twin_Lakes.jpg');
-	background-position: 50% 50%;
+	background-position: 50%;
 	background-repeat: no-repeat;
 	background-size: cover;
   	backface-visibility: hidden;
