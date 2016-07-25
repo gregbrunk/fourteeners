@@ -18,7 +18,6 @@ class Fourteener < Sinatra::Base
 	end
 
 	#Mountain Routes - Get One
-
 	get '/mountains/:id' do
 		@mountain = Mountain.find(params[:id])
 		erb :show

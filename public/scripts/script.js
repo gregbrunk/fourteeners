@@ -83,15 +83,15 @@ $(document).ready(function() {
   }
   deleteMountain();
       
-   var scroll_start = 0;
-   var startchange = $('#startchange');
-   var offset = startchange.offset();
-   $(document).scroll(function() { 
-      scroll_start = $(this).scrollTop();
-      if(scroll_start > offset.top) {
-          $('#navbar-def').css('background-color', '#5D6683');
-       } else {
-          $('#navbar-def').css('background-color', 'transparent');
-       }
-   });
+  var scroll_start = 0;
+  var startchange = $('.startchange');
+  var offset = startchange.offset();
+  $(document).scroll(function() { 
+    scroll_start = $(this).scrollTop();
+    if(scroll_start > offset.top) {
+        $('#navbar-def').css('background-color', '#5D6683');
+     } else {
+        $('#navbar-def').css('background-color', 'transparent');
+     }
+  });
 });

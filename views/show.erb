@@ -53,14 +53,15 @@
 <!-- Main Page Content -->
   <!-- Hero Section -->
   <section class="mountain-hero" style="background-image: url(<%=@mountain.hero_url%>)">
-  	<div class="col-md-12 col-xs-12" id="mountain-buttons">
-  		<button data-target="#myEditModal" data-toggle="modal" class="btn btn-default" id="edit">Edit Mountain</button>
-  		<button data-mountain="<%=@mountain.id%>" class="btn btn-default>" id="delete">Delete Mountain</button>
-  	</div>
   	<div class= "col-md-12 col-xs-12" id="mountain-healine-block">
   		<p id="mountain-headline"><%=@mountain.name%></p>
   	</div>
+    <div class="col-md-12 col-xs-12" id="mountain-buttons">
+      <button data-target="#myEditModal" data-toggle="modal" class="btn btn-default" id="edit">Edit Mountain</button>
+      <button data-mountain="<%=@mountain.id%>" class="btn btn-default>" id="delete">Delete Mountain</button>
+    </div>
   </section>
+  <div class="startchange"></div>
 
   <!-- Main Content Section (detials) -->
   <section class="main-content" id="mountain-main-content">
