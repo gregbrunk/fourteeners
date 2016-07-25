@@ -83,7 +83,7 @@ peak_data = [
     range: "Mosquito Range",
     elevation: "14286",
     rank: 8,
-    description: "placeholder",
+    description: "",
     hero_url: "www.placeholer.com",
     challenge: 1,
     latitude: "39.35 N",

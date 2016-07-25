@@ -44,5 +44,12 @@ class Fourteener < Sinatra::Base
 	    @del_mountain = Mountain.find(params[:id])
 	    @del_mountain.destroy
   	end
+
+  	#Search Route - Getting
+	get '/search' do 
+		@name = params[:search]
+		@mountains = Mountain.where("name LIKE ?", "%#{@name}%")
+		erb :index
+	end
 end
 
