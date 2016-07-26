@@ -1,6 +1,8 @@
 # fourteeners
 fourteeners is a prototype app to help climbers track all 14'ers in Colorado, and which they have conquered.
 
+![Alt text](/public/images/Home-Page.jpg?raw=true "Home Page Design")
+
 The goal of this project was to excercise building a complete RESTful API on Ruby/Sinatra, using Active Record to interact with a PostgreSQL database. I also wanted to test my skills in mobile optimization and building a front-end according to fairly polished designs.
 
 Links:
