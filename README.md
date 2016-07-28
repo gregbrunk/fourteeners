@@ -1,11 +1,11 @@
 # fourteeners
-fourteeners is a prototype app to help climbers track all 14'ers in Colorado, and which they have conquered.
+fourteeners is a prototype app to help climbers track all the 14'ers in Colorado, and identify those they have conquered.
 
 ![Alt text](/public/images/Home-Page.jpg?raw=true "Home Page Design")
 
-The goal of this project was to excercise building a complete RESTful API on Ruby/Sinatra, using Active Record to interact with a PostgreSQL database. I also wanted to test my skills in mobile optimization and building a front-end according to fairly polished designs.
+The goal of this project was to build a complete RESTful API on Ruby/Sinatra, using Active Record to interact with a PostgreSQL database. I also wanted to test my skills in mobile optimization and building a front-end according to fairly polished designs.
 
-*Note: the inspiration for this project was a mobile concept pulled together by Alex Eiman on Dribble.com. Alex's work is brilliant! The original concept can be found here: https://dribbble.com/shots/2520861-Fourteeners-App-Cards.*
+*Note: the inspiration for this project was a mobile concept pulled together by Alex Eiman on Dribbble. Alex's work is brilliant! The original concept can be found here: https://dribbble.com/shots/2520861-Fourteeners-App-Cards.*
 
 **Links:**
 - Link to live game site (heroku) - https://fourteeners-app.herokuapp.com/
