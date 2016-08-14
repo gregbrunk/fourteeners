@@ -1,4 +1,4 @@
-# fourteeners
+# fourteener
 fourteeners is a prototype app to help climbers track all the 14'ers in Colorado, and identify those they have conquered.
 View the live app here: https://fourteeners-app.herokuapp.com/
 
@@ -33,11 +33,10 @@ The goal of this project was to build a complete RESTful API on Ruby/Sinatra, us
 
 **Installation Instructions:**
 - To view the live site, visit: https://fourteeners-app.herokuapp.com/
-
-- If not already installed, install Ruby v 2.2.5 or newer installed - https://www.ruby-lang.org/en/downloads/
-- If not already installed, install postgresql - https://wiki.postgresql.org/wiki/Detailed_installation_guides
-- To install, visit: https://github.com/gregbrunk/fourteeners and fork/clone the repo
-- From a console in the root politicator directory, run 'bundle', follwed by 'rake db:setup'
+- To install locally, visit: https://github.com/gregbrunk/fourteeners and fork/clone the repo
+- Install Ruby v 2.2.5 or newer installed - https://www.ruby-lang.org/en/downloads/
+- Install postgresql - https://wiki.postgresql.org/wiki/Detailed_installation_guides
+- From a console in the root fourteener directory, run 'bundle', follwed by 'rake db:setup'
 - Start the server using 'bundle exec rackup'
 - Navigate to 'http://localhost:9292/' from your browser
 - Enjoy!
