@@ -26,9 +26,10 @@ The goal of this project was to build a complete RESTful API on Ruby/Sinatra, us
 - Users will be able to add a "summit" to a particular mountain with a photo, their name, and a date. 
 - User authentication, profile management and mountain tracking.
 - Admin/public api access control.
+- Include more relevant information on the mountian pages.
 
 **Outstanding Issues:**
-- Database is unfinished
+- Database seeding is unfinished, not all mountains have complete data.
 - Mobile optimization is less than ideal, particularly in the mountain list (index).
 
 **Installation Instructions:**
