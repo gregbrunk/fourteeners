@@ -33,6 +33,13 @@ The goal of this project was to build a complete RESTful API on Ruby/Sinatra, us
 
 **Installation Instructions:**
 - To view the live site, visit: https://fourteeners-app.herokuapp.com/
-- To install, visit: https://github.com/gregbrunk/fourteeners and fork/clone the repo.
+
+- If not already installed, install Ruby v 2.2.5 or newer installed - https://www.ruby-lang.org/en/downloads/
+- If not already installed, install postgresql - https://wiki.postgresql.org/wiki/Detailed_installation_guides
+- To install, visit: https://github.com/gregbrunk/fourteeners and fork/clone the repo
+- From a console in the root politicator directory, run 'bundle', follwed by 'rake db:setup'
+- Start the server using 'bundle exec rackup'
+- Navigate to 'http://localhost:9292/' from your browser
+- Enjoy!
 
 *This app was developed as Project #2 for my General Assembly Denver - WDI Immersive course.*
