@@ -1,4 +1,4 @@
-# fourteener
+# fourteeners
 fourteeners is a prototype app to help climbers track all the 14'ers in Colorado, and identify those they have conquered.
 View the live app here: https://fourteeners-app.herokuapp.com/
 
