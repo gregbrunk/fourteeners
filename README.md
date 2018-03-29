@@ -1,6 +1,6 @@
 # fourteeners
 fourteeners is a prototype app to help climbers track all the 14'ers in Colorado, and identify those they have conquered.
-View the live app here: https://fourteeners-app.herokuapp.com/
+The app is no longer live :( Maybe when I get a chance to overhaul some of the dated design and code-structure, I will bring it back to the world!
 
 ![Alt text](/public/images/Home-Page.jpg?raw=true "Home Page Design")
 
@@ -33,7 +33,6 @@ The goal of this project was to build a complete RESTful API on Ruby/Sinatra, us
 - Mobile optimization is less than ideal, particularly in the mountain list (index).
 
 **Installation Instructions:**
-- To view the live site, visit: https://fourteeners-app.herokuapp.com/
 - To install locally, visit: https://github.com/gregbrunk/fourteeners and fork/clone the repo
 - Install Ruby v 2.2.5 or newer installed - https://www.ruby-lang.org/en/downloads/
 - Install postgresql - https://wiki.postgresql.org/wiki/Detailed_installation_guides
