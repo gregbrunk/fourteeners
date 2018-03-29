@@ -8,11 +8,6 @@ The goal of this project was to build a complete RESTful API on Ruby/Sinatra, us
 
 *Note: the inspiration for this project was a mobile concept pulled together by Alex Eiman on Dribbble. Alex's work is brilliant! The original concept can be found here: https://dribbble.com/shots/2520861-Fourteeners-App-Cards.*
 
-**Links:**
-- Link to live site (heroku) - https://fourteeners-app.herokuapp.com/
-- Wireframes - see "Wireframes" folder in the project repo (or in Trello).
-- Trello Project Board - https://trello.com/b/zPiE11Wx/fourteeners
-
 **Technologies Used:**
 - Ruby & Sinatra
 - jQuery/AJAX
